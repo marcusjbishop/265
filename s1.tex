@@ -1,0 +1,297 @@
+\documentclass[11pt]{article}
+\usepackage{booktabs}
+\usepackage[euler-digits]{eulervm}
+\usepackage[colorlinks=true, linkcolor=blue, breaklinks=true]{hyperref} 
+\def\sectionautorefname~#1\null{\S#1\null}
+\usepackage{charter,amsmath,amssymb,breakurl}
+\usepackage[letterpaper,margin=.9in]{geometry}
+\title{Syllabus for Math~166, Section 29}
+\author{Dr Marcus Bishop, Iowa State University}
+\begin{document}
+\maketitle
+
+\section{Time, place}\label{Time}
+We will meet at 15:10--16:00
+on Mondays, Tuesdays, Thursdays, and Fridays
+in Carver~18.
+The midterm exam is at 20:15--21:45
+on Wednesday 8 October in Coover~2245.
+You should plan your schedule accordingly.
+
+\section{Credits, requirements, prerequisites, materials}\label{Require}
+The course is worth $4$~credits.
+To take this course, you should have taken Math~165
+or the equivalent. You will need the twelfth edition of 
+\href{http://wps.aw.com/aw_thomas_calculus_series}
+{\em Thomas' Calculus, Early Trancendentals}
+by Thomas, Weir, and Hass, hereafter referenced by
+\href{http://wps.aw.com/aw_thomas_calculus_series}{Thomas}.
+You will also want a 
+\href{http://en.wikipedia.org/wiki/TI-83}{TI-83} or
+\href{http://en.wikipedia.org/wiki/TI-84}{TI-84}
+graphing calculator. Unfortunately, we cannot allow you to use
+any device with algebraic capabilities greater than those of the TI-83
+or TI-84 on quizzes and exams. However, we encourage
+you to supplement your learning with a computer algebra system
+of your choice.
+In class I will use \href{http://www.sagemath.org}{\textsf Sage},
+an open-source computer algebra system that you can install on your
+computer for free if you wish.
+
+\section{Instructor information} You may visit me during my office 
+hours at 14:00--15:00 on Mondays, Tuesdays, Thursdays, and Fridays
+in Carver~418. If my office hours are inconvenient for you
+please contact me at 
+\href{mailto:mbishop@iastate.edu}{\tt mbishop@iastate.edu} or at 
+515-294-0027 to arrange an alternate time.
+You can also visit the Math Help Room (see \autoref{MathCenter}).
+
+\section{Course goals, content}
+Calculus is the starting point for
+many different University programs.
+This is because calculus has proved to be extremely useful
+in a variety of different areas due to
+the fact that these areas all
+deal in one way or another with {\em change},
+the central theme of calculus.
+Newton and Leibniz simultaneously discovered calculus in the 
+seventeenth century in the context of theoretical physics.
+Newton was interested in the motion of planets,
+that is, the {\em change} of the positions of planets.
+However, over the subsequent centuries, it was discovered
+that calculus could be applied more generally to
+{\em all} quantities that change, having applications in life sciences,
+actuarial science, economics, computer science, and medicine,
+to name a few.
+
+Practically speaking, calculus can be applied in situations
+where one wants to study the change in some quantity
+that can be expressed as (or at least approximated by)
+a mathematical function, like a polynomial or an exponential function.
+For this reason, much of Math~165 was concerned with
+{\em modeling} changing quantities using mathematical functions,
+a task which is also useful outside the context of calculus.
+In Math~165 we also introduced the central
+operations of calculus, namely, the limit, the derivative, and the integral,
+with special emphasis placed on the techniques used to calculate
+the derivative.
+
+Now in Math~166 we continue the program, beginning with the
+integral, with special emphasis placed on the techniques used to
+integrate functions. In contrast with differentiation techniques,
+we will see that integration techniques range from
+straightforward to subtle. Nevertheless, the ability to integrate
+a large class of functions translates to the ability to solve a large
+class of real world problems. We will also introduce series, which
+provide alternate representations of differentiable functions.
+Finally, we will introduce parametric equations and polar
+coordinates. These provide alternate ways to look at problems
+and often lead to more convenient computations.
+
+\section{Course Objectives}
+\subsection{Applications of the Integral} 
+Set up and evaluate integrals to calculate
+  \begin{enumerate}
+    \item Area of a plane region
+    \item Volume of a solid of revolution
+    \item Length of a plane curve
+    \item Area of a surface of revolution
+    \item Work done by a variable force
+    \item Moments and center of mass of a plane lamina, centroid of a plane
+          region. 
+  \end{enumerate}
+\subsection{Techniques of Integration}
+  \begin{enumerate}
+    \item Evaluate integrals of trigonometric functions.
+    \item Use trigonometric and rationalizing substitutions to evaluate
+          integrals. 
+    \item Carry out integration by parts and apply it to evaluate integrals.
+    \item Use partial fractions to evaluate integrals of rational functions.
+  \end{enumerate}
+\subsection{Indeterminate Forms and Improper Integrals}
+  \begin{enumerate}
+    \item Apply l'Hospital's Rule to evaluate limits having the
+          indeterminate forms $0/0$, $\infty/\infty$, $0\cdot\infty$ and
+          $\infty-\infty$. 
+    \item Determine convergence or divergence of improper integrals; evaluate
+          improper integrals that converge.
+  \end{enumerate}
+\subsection{Infinite Series}
+  \begin{enumerate}
+    \item Apply limit rules to calculate limits of sequences. Apply the concept
+          of boundedness to identify convergent monotonic sequences.
+    \item Use the concept of partial sum to distinguish between convergent and
+          divergent series and to define the sum of a convergent series.
+    \item Recognize geometric series and collapsing series and calculate their
+          sums when convergent.
+    \item Use the integral test, the comparison test, the limit comparison
+          test and the ratio test to determine the convergence or divergence of
+          series. Use the error estimate derived from the integral test to
+          estimate sums or tails of series.
+    \item Recognize alternating series, and apply the alternating series test
+          and associated error estimate. Identify absolutely convergent series.
+    \item Determine radius of convergence and convergence set of a power
+          series. 
+    \item Apply term-by-term integration and differentiation to power series.
+          Perform algebraic operations on power series.
+    \item Expand a function in a Taylor series. Recall and use the Taylor
+          series of elementary functions.
+    \item Use the remainder in Taylor's formula to estimate the approximation
+          error in a Taylor polynomial.
+  \end{enumerate}
+\subsection{Plane Parametric Curves, Polar Coordinates}
+  \begin{enumerate}
+    \item Derive parametric representations for plane curves described
+          ``mechanically'' (for example, the cardiod). 
+    \item Find tangents and compute length for parametric curves.
+    \item Use polar coordinates, and convert between polar and rectangular
+          coordinates. Identify the polar equations for lines, circles and
+          conics. 
+    \item Compute the area of regions whose boundaries are defined by
+          equations in polar coordinates.
+  \end{enumerate}
+
+\section{Calculation of grades}\label{Assessment}
+Your grade will be determined by the results of 
+26 online assignments (see \autoref{Online}),
+four quizzes, two hour exams, one midterm exam, and one 
+final exam.
+%In order to accommodate unforeseen events that would cause you
+%to pass up the opportunity to take quizzes or submit assignments on time,
+%we will exclude from your final grade
+%the quiz with the lowest score among all your quizzes
+%and the two written assignments with the lowest scores among
+%all your written assignments.
+Your final grade will be determined from the total
+number of points you receive in the course using the schedule below,
+where the final exam accounts for 250~points,
+the hour and midterm exams for 150~points each,
+the quizzes for 100~points,
+and the online assignments for 200~points.
+The following table shows the {\em minimum} final grade you will receive
+if your point total falls in the corresponding range.
+\begin{center}\begin{tabular}{clclcl}
+&&A&930--1000
+&A--&900--929\\
+B+&870--899\qquad\qquad
+&B&830--869\qquad\qquad
+&B--&800--829\\
+C+&770--799
+&C&730--769
+&C--&700--729\\
+D+&670--699
+&D&600--669\\
+&&F&0--599
+\end{tabular}\end{center}
+All the scores mentioned above will be available to you in
+\href{https://bb.its.iastate.edu}{Blackboard}. Using your scores
+and the formula above, you should be able to calculate your own final grade,
+and even estimate your final grade midway through the semester.
+It is therefore unnecessary for you to ever ask the instructor
+what your grade in the course is, which we kindly ask you to refrain from
+doing.
+
+We emphasize that the grades will be calculated in the manner described
+above, not ``curved''. However, in the unlikely event that an exam or quiz question is determined
+to be unfair or overly difficult, it will be dropped from the total score of
+every student.
+
+\section{Online exercises}\label{Online}
+The online exercises will be delivered through the
+\href{http://iastate.mylabsplus.com}{MyLabsPlus} system.
+Your subscription to 
+\href{http://iastate.mylabsplus.com}{MyLabsPlus}
+comes with the purchase of your
+\href{http://wps.aw.com/aw_thomas_calculus_series}{textbook}.
+However, if you purchased the book from some other source,
+then you can purchase a 
+\href{http://iastate.mylabsplus.com}{MyLabsPlus}
+subscription at the bookstore or directly at
+\href{http://iastate.mylabsplus.com}{MyLabsPlus}.
+To access
+\href{http://iastate.mylabsplus.com}{MyLabsPlus}
+sign in at
+\begin{center}
+\href{http://iastate.mylabsplus.com}{\tt http://iastate.mylabsplus.com}
+\end{center}
+with your NetID and password.
+You should also run the
+\href{https://www.mathxl.com/BrowserCheck/BrowserCheck.aspx?appproductid=3&courseid=2744761&handler_urn=pearson%2fmlp_mml_xl%2fslink%2fx-pearson-mlp_mml_xl&productid=ccng}{Browser Checker}
+to ensure that all the exercises will appear correctly.
+In addition to providing your online assignments
+\href{http://iastate.mylabsplus.com}{MyLabsPlus}
+also contains a number of useful resources, not the least of which is an
+electronic copy of the entire text, which could obviate
+the somewhat strenuous task of transporting the book.
+
+You will have 26~online assignment corresponding
+approximately with the sections of 
+\href{http://wps.aw.com/aw_thomas_calculus_series}{Thomas}
+that we will cover. Each online assignment will be available while we cover the
+corresponding section in class and must be completed
+before 23:59 of the date shown on the assignment, which
+is usually one class period after we cover the section in class.
+In this way you can raise questions about
+the assignment in class before completing the assignment.
+
+\section{Expectations, suggestions} Naturally we expect you to attend 
+class meetings, complete online assignments on 
+time, prepare for quizzes and exams, and participate in classroom 
+activities. We also strongly encourage you to read
+\href{http://wps.aw.com/aw_thomas_calculus_series}{Thomas}
+in addition to attending lectures.
+In addition to being generally prudent to 
+supplement your learning materials, reading the text has a number of 
+advantages over attending lectures alone. Namely, the text is beautifully 
+typeset and edited by professionals, very clearly written with readers 
+of exactly your level in mind, and virtually free of mistakes.
+
+\section{Course schedule}\label{Schedule} While the exact subject
+matter to be covered in class shown in the following schedule is
+subject to change slightly, the quizzes and exams will be conducted
+on {\em exactly} the dates shown.
+
+\begin{tabular}{c|cl|cl|cl|cl}
+&\multicolumn{2}{c|}{\bf Monday}
+&\multicolumn{2}{c|}{\bf Tuesday}
+&\multicolumn{2}{c|}{\bf Thursday}
+&\multicolumn{2}{c}{\bf Friday}\\
+{\bf Week}&{\bf Date}&{\bf In class}
+&{\bf Date}&{\bf In class}&{\bf Date}&{\bf In class}
+&{\bf Date}&{\bf In class}\\\toprule
+1&25 Aug&\S6.1&26 Aug&\S6.1&28 Aug&\S6.1&29 Aug&\S6.2\\\midrule
+2&1 Sep&Holiday&2 Sep&\S6.2&4 Sep&\S6.3&5 Sep&\S6.3, {\bf Quiz 1}\\\midrule
+3&8 Sep&\S6.4&9 Sep&\S6.4&11 Sep&\S6.5&12 Sep&\S6.5\\\midrule
+4&15 Sep&\S6.6&16 Sep&\S6.6&18 Sep&Review&19 Sep&{\bf Exam 1}\\\midrule
+5&22 Sep&\S8.1&23 Sep&\S8.1&25 Sep&\S8.2&26 Sep&\S8.2\\\midrule
+6&29 Sep&\S8.3&30 Sep&\S8.3&2 Oct&\S8.4&3 Oct&\S8.4, {\bf Quiz 2}\\\midrule
+7&6 Oct&Review&7 Oct&&9 Oct&\S8.5&10 Oct&\S8.5\\\midrule
+8&13 Oct&\S8.7&14 Oct&\S8.7&16 Oct&\S10.1&17 Oct&\S10.1\\\midrule
+9&20 Oct&\S10.2&21 Oct&\S10.3&23 Oct&\S10.3&24 Oct&\S10.4, {\bf Quiz 3}\\\midrule
+10&27 Oct&\S10.5&28 Oct&\S10.5&30 Oct&\S10.6&31 Oct&\S10.7\\\midrule
+11&3 Nov&\S10.7&4 Nov&\S10.8&6 Nov&Review&7 Nov&{\bf Exam 3}\\\midrule
+12&10 Nov&\S10.8&11 Nov&\S10.9&13 Nov&\S10.9&14 Nov&\S10.10\\\midrule
+13&17 Nov&\S10.10&18 Nov&\S11.1&20 Nov&11.1&21 Nov&\S11.2, {\bf Quiz 4}\\\midrule
+14&1 Dec&\S11.2&2 Dec&\S11.3&4 Dec&\S11.4&5 Dec&\S11.5\\\midrule
+15&8 Dec&\S11.6&9 Dec&\S11.6&11 Dec&\S11.7&12 Dec&Review\\\midrule
+\end{tabular}
+
+\section{Math Help Room}\label{MathCenter}
+We strongly encourage you to visit the Math Help Room
+in Carver~385 for additional help.
+Open 9:00--16:00 Monday through Friday the Math Help Room
+has tutors specifically intended to address Math~166 questions.
+
+\section{Students with disabilities, academic honesty, disruptive behavior}
+The Department of Mathematics complies with the 
+\href{http://www.ada.gov}{American Disabilities Act} in making reasonable 
+accommodations for qualified students with disabilities.  Students with 
+special needs should call the 
+\href{http://www.dso.iastate.edu/dr}{Office of Student Disability Resources} at
+515-294-7220.
+We strictly enforce the University's policies on 
+\href{http://www.dso.iastate.edu/ja/academic/misconduct}{academic misconduct}
+and \href{http://www.dso.iastate.edu/sa/issuesconcerns/disruption}
+{disruptive behavior}.
+
+\end{document}
