@@ -1,0 +1,80 @@
+\documentclass[answers,addpoints]{exam}
+\usepackage{graphicx,multicol}
+\usepackage{charter,amsmath,amssymb}
+\usepackage{eulervm}
+\usepackage[letterpaper,margin=1in]{geometry}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\bf Math 265}
+{\bf Exam One, Page \thepage\ of \numpages}
+{\bf 6 January 2015}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\begin{center}
+\huge Math 265 Exam One\\
+\LARGE Spring 2015
+\end{center}
+
+\ifprintanswers\else
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{
+This exam has \numquestions~questions.
+It has been printed on \numpages~pages and is worth \numpoints~points.
+Answer all the questions in the spaces provided.
+The last page has been left blank for your calculations.
+Although you may use any calculator on this exam,
+you must clearly indicate how you arrived at your answers
+in order to receive maximum credit.
+By signing below, you pledge that you
+\begin{enumerate}
+\item will not communicate to any person in any conceivable way anything
+about the contents of this exam
+until all students have taken it, and
+\item have not been the recipient of such communication from anyone else.
+\end{enumerate}}}}
+\end{center}
+\vspace{.2in}
+\makebox[\textwidth]{Your signature:\enspace\hrulefill}\\
+\vspace{.2in}\\
+\makebox[\textwidth]{Your name:\enspace\hrulefill}\\
+\vfill
+\begin{center}\gradetable[h][questions]\end{center}
+\vfill
+\fi
+
+\begin{questions}
+
+\question[12] What values of $a$ make
+$\mathbold{v}=2a\mathbold{i}-a\mathbold{j}+16\mathbold{k}$
+orthogonal to $5\mathbold{i}+a\mathbold{j}-\mathbold{k}$?
+
+\question[20]
+Let $P=\left(0,1,0\right)$, $Q=\left(-1,1,2\right)$,
+and $R=\left(2,1,-1\right)$ and let $\Pi$ be the plane
+containing $P,Q,R$.
+\begin{parts}
+\part Find the measure of $\angle PQR$.
+\part Find the area of $\Delta PQR$.
+\part Find a vector perpendicular to $\Pi$.
+\item Find an equation for $\Pi$.
+\item Find the distance from $\Pi$ to the origin.
+\end{parts}
+
+\question[20] One force is pushing an object in a direction
+$50^\circ$ south of east with a force of 25~newtons.
+A second force is simultaneously pushing the object
+in a direction $70^\circ$ north of west with a force of
+60~newtons. If the object is to remain stationary,
+give the direction and magnitude of the third force that must
+be applied to the object to counterbalance
+the first two.
+
+
+\end{questions}
+\end{document}
