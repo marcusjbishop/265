@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage[euler-digits]{eulervm}
+\usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
+{hyperref} 
+\def\sectionautorefname~#1\null{\S#1\null}
+\usepackage{charter,amsmath,amssymb,breakurl}
+\usepackage[letterpaper,margin=1in]{geometry}
+\def\equationautorefname~#1\null{(#1)\null}
+\def\itemautorefname~#1\null{(#1)\null}
+\title{Worksheet 1}
+\author{}\date{}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\arctan\relax\DeclareMathOperator{\arctan}{\mathsf{arctan}}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\min\relax\DeclareMathOperator*{\min}{\mathsf{min}}
+\let\max\relax\DeclareMathOperator*{\max}{\mathsf{max}}
+\let\sup\relax\DeclareMathOperator*{\sup}{\mathsf{sup}}
+\let\inf\relax\DeclareMathOperator*{\inf}{\mathsf{inf}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\maketitle
+
+\begin{enumerate}
+\item Find the area of the triangle with vertices
+$\left(0,0,0\right)$, $\left(2,4,-5\right)$,
+$\left(-6,10,2\right)$. %3\sqrt{166}
+\item Give a geometric description of the set
+$x^2-x+y^2+4y+z^2-6z+11\le 0$.
+% ball centered at (1/2,-2,3) of radius 3/2
+\item A small plane flying north in calm air at
+250~miles/hour is hit by a horizontal crosswind blowing
+northeast at 40 miles/hour and a 25 mile/hour downdraft.
+Find the resulting velocity and and speed of the plane.
+\item Find scalars $a,b,c$ such that
+$\left\langle 2,2,2\right\rangle
+=a\left\langle 1,1,0\right\rangle
++b\left\langle 0,1,1\right\rangle
++c\left\langle 1,0,1\right\rangle$.
+\item Let $\mathbold{u}=-\mathbold{i}+2\mathbold{j}+2\mathbold{k}$
+and $\mathbold{v}=3\mathbold{i}+6\mathbold{j}+6\mathbold{k}$.
+Calculate the angle between $\mathbold{u}$ and $\mathbold{v}$
+and $\mathsf{proj}_\mathbold{v}\mathbold{u}$
+and $\mathsf{proj}_\mathbold{u}\mathbold{v}$.
+%.68 radians, 7/9<1,2,2>, 7/3<-1,2,2>
+\item Find a unit vector normal to the vectors
+$\left\langle 2,-6,9\right\rangle$ and
+$\left\langle -1,0,6\right\rangle$.
+%<12,7,2>/sqrt(197)
+\item Find an equation for the line through
+$\left(0,1,1\right)$ and parallel to the line
+\[\mathbold{r}\left(t\right)=\left\langle
+1+2t,3-5t,7+6t\right\rangle.\]
+\item Find an equation for the line through
+$\left(0,1,4\right)$ that is orthogonal to both
+$\left\langle -2,1,7\right)$ and the $y$-axis.
+\item Find the velocity and acceleration of
+a particle with the following position
+functions and sketch the trajectory
+of the particle.
+\begin{enumerate}
+\item $\mathbold{r}\left(t\right)=\left\langle
+e^{-2t},te^{-t},\arctan{t}\right\rangle$.
+\item $\mathbold{r}\left(t\right)=\left\langle
+\sin{2t},3\cos{4t},t\right\rangle$
+\end{enumerate}
+\end{enumerate}
+\end{document}
