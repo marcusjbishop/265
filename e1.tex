@@ -1,4 +1,4 @@
-\documentclass[12pt,addpoints]{exam}
+\documentclass[answers,12pt,addpoints]{exam}
 \usepackage{graphicx,multicol}
 \usepackage{charter,amsmath,amssymb}
 \usepackage{eulervm}
@@ -52,6 +52,16 @@ until all students have taken it, and
 $2\alpha\mathbold{i}-\alpha\mathbold{j}+16\mathbold{k}$
 orthogonal to $5\mathbold{i}+\alpha\mathbold{j}-\mathbold{k}$?
 \begin{solution}[1in]
+\begin{align*}
+0&=\left\langle 2\alpha,-\alpha,16\right\rangle
+\cdot\left\langle 5,\alpha,-1\right\rangle\\
+&=10\alpha-\alpha^2-16\\
+\Leftrightarrow\qquad
+0&=\alpha^2-10\alpha+16\\
+\Leftrightarrow\qquad
+\alpha&=\frac{-10\pm\sqrt{10^2-4\left(16\right)}}{2}\\
+&=5\pm 3\\&=2,8
+\end{align*}
 \end{solution}
 \ifprintanswers\else\newpage\fi
 
@@ -62,21 +72,64 @@ containing $P,Q,R$.
 \begin{parts}
 \part Find the measure of $\angle PQR$.
 \begin{solution}[2in]
+Observe that $\overrightarrow{QP}=\left\langle
+-1,0,2\right\rangle$ and $\overrightarrow{QR}=\left\langle
+3,0,-3\right\rangle$ so that
+$\left|\overrightarrow{QP}\right|=\sqrt{5}$ and
+$\left|\overrightarrow{QR}\right|=\sqrt{18}$.
+Then since
+$\overrightarrow{QP}\cdot\overrightarrow{QR}
+=-9$ we have
+\[\cos\left(\theta\right)=\frac{-9}{\sqrt{5}\sqrt{18}}
+=\frac{-3}{\sqrt{10}}\]
+where $\theta$ is the measure of $\angle PQR$.
+Solving for $\theta$ gives approximately $2.82$~radians
+or $162^\circ$.
 \end{solution}
-\part Find a vector perpendicular to $\Pi$.
+
+\part\label{PiPerp} Find a vector perpendicular to $\Pi$.
 \begin{solution}[2in]
+We can take
+$\overrightarrow{QP}\times\overrightarrow{QR}
+=\left|\begin{array}{ccc}
+\mathbold{i}&\mathbold{j}&\mathbold{k}\\
+-1&0&2\\3&0&-3\end{array}\right|=3\mathbold{j}$.
 \end{solution}
-\part Find the area of $\Delta PQR$.
+\part Find the area of $\triangle PQR$.
 \begin{solution}[1.75in]
+$\left|\overrightarrow{QP}\times\overrightarrow{QR}\right|
+=3$ is the area of the parallelogram formed by
+$\overrightarrow{QP}$ and $\overrightarrow{QR}$,
+so $\frac{3}{2}$ is the area of $\triangle PQR$.
 \end{solution}
 \part Find the projection of $\overrightarrow{PQ}$
 onto $\overrightarrow{PR}$.
 \begin{solution}[1.75in]
+$\overrightarrow{PQ}=\left\langle -1,0,2\right\rangle$
+and $\overrightarrow{PR}=\left\langle 2,0,-1\right\rangle$, so
+\[\mathsf{proj}_{\overrightarrow{PR}}\overrightarrow{PQ}
+=\frac{\overrightarrow{PQ}\cdot\overrightarrow{PR}}
+{\left|\overrightarrow{PR}\right|^2}\overrightarrow{PR}
+=\frac{-4}{5}\left\langle 2,0,-1\right\rangle.\]
 \end{solution}
-%\ifprintanswers\else\newpage\fi
+
+\item\label{PiEquation} Find an equation for $\Pi$.
+\begin{solution}[1.75in]
+Since $\mathbold{j}$ is normal to $\Pi$ by (\ref{PiPerp})
+and $P=\left(0,1,0\right)$ is on $\Pi$, we can take
+$y=1$ as an equation for $\Pi$.
+\end{solution}
+
+\item Find the distance from $\Pi$ to the origin.
+\begin{solution}[1.75in]
+It should be clear from (\ref{PiEquation}) that $1$
+is the distance from $\Pi$ to the origin.
+\end{solution}
+
 \item Find an equation for $\Pi$.
 \begin{solution}[1.75in]
 \end{solution}
+
 \item Find the distance from $\Pi$ to the origin.
 \end{parts}
 \begin{solution}[1.75in]
