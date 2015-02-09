@@ -59,8 +59,8 @@ orthogonal to $5\mathbold{i}+\alpha\mathbold{j}-\mathbold{k}$?
 \Leftrightarrow\qquad
 0&=\alpha^2-10\alpha+16\\
 \Leftrightarrow\qquad
-\alpha&=\frac{-10\pm\sqrt{10^2-4\left(16\right)}}{2}\\
-&=5\pm 3\\&=2,8
+\alpha&=\frac{10\pm\sqrt{10^2-4\left(16\right)}}{2}\\
+&=5\pm 3=2,8
 \end{align*}
 \end{solution}
 \ifprintanswers\else\newpage\fi
@@ -73,18 +73,18 @@ containing $P,Q,R$.
 \part Find the measure of $\angle PQR$.
 \begin{solution}[2in]
 Observe that $\overrightarrow{QP}=\left\langle
--1,0,2\right\rangle$ and $\overrightarrow{QR}=\left\langle
+1,0,-2\right\rangle$ and $\overrightarrow{QR}=\left\langle
 3,0,-3\right\rangle$ so that
 $\left|\overrightarrow{QP}\right|=\sqrt{5}$ and
 $\left|\overrightarrow{QR}\right|=\sqrt{18}$.
 Then since
 $\overrightarrow{QP}\cdot\overrightarrow{QR}
-=-9$ we have
-\[\cos\left(\theta\right)=\frac{-9}{\sqrt{5}\sqrt{18}}
-=\frac{-3}{\sqrt{10}}\]
+=9$ we have
+\[\cos\left(\theta\right)=\frac{9}{\sqrt{5}\sqrt{18}}
+=\frac{3}{\sqrt{10}}\]
 where $\theta$ is the measure of $\angle PQR$.
-Solving for $\theta$ gives approximately $2.82$~radians
-or $162^\circ$.
+Solving for $\theta$ gives approximately $0.32$~radians
+or $18^\circ$.
 \end{solution}
 
 \part\label{PiPerp} Find a vector perpendicular to $\Pi$.
@@ -115,7 +115,8 @@ and $\overrightarrow{PR}=\left\langle 2,0,-1\right\rangle$, so
 
 \item\label{PiEquation} Find an equation for $\Pi$.
 \begin{solution}[1.75in]
-Since $\mathbold{j}$ is normal to $\Pi$ by (\ref{PiPerp})
+Knowing that $\mathbold{j}$ is normal to
+$\Pi$ by (\ref{PiPerp})
 and $P=\left(0,1,0\right)$ is on $\Pi$, we can take
 $y=1$ as an equation for $\Pi$.
 \end{solution}
@@ -126,14 +127,7 @@ It should be clear from (\ref{PiEquation}) that $1$
 is the distance from $\Pi$ to the origin.
 \end{solution}
 
-\item Find an equation for $\Pi$.
-\begin{solution}[1.75in]
-\end{solution}
-
-\item Find the distance from $\Pi$ to the origin.
 \end{parts}
-\begin{solution}[1.75in]
-\end{solution}
 
 \question[20] Find an equation for the line
 tangent to the logarithmic spiral
@@ -141,12 +135,29 @@ tangent to the logarithmic spiral
 =\left\langle e^t\cos{t},e^t\sin{t},e^t\right\rangle\]
 at the point $\left(1,0,1\right)$.
 \begin{solution}[1in]
+First note that $t=0$ is the point such that
+$\mathbold{r}\left(t\right)=\left(1,0,1\right)$.
+Now since
+\[\mathbold{r}'\left(t\right)
+=\left\langle e^t\cos{t}-e^t\sin{t},
+e^t\sin{t}+e^t\cos{t},e^t\right\rangle\]
+we have $\mathbold{r}'\left(0\right)
+=\left\langle1,1,1\right\rangle$ so that
+the tangent line at $t=0$ is given by
+\[\left\langle 1,0,1\right\rangle+t\left\langle
+1,1,1\right\rangle.\]
 \end{solution}
 \ifprintanswers\else\newpage\fi
 
 \question[25] Find the intersection of the planes
 $x-y-z=-1$ and $x-y+z=1$.
 \begin{solution}[1in]
+It's helpful to observe that since
+$\mathbold{n}_1=\left\langle 1,-1,-1\right\rangle$ and
+$\mathbold{n}_2=\left\langle 1,-1,1\right\rangle$
+are normal to the two planes respectively,
+the vector $\mathbold{n}_1\times\mathbold{n_2}$
+
 \end{solution}
 
 \end{questions}
