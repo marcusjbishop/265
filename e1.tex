@@ -93,7 +93,7 @@ We can take
 $\overrightarrow{QP}\times\overrightarrow{QR}
 =\left|\begin{array}{ccc}
 \mathbold{i}&\mathbold{j}&\mathbold{k}\\
--1&0&2\\3&0&-3\end{array}\right|=3\mathbold{j}$.
+1&0&-2\\3&0&-3\end{array}\right|=-3\mathbold{j}$.
 \end{solution}
 \part Find the area of $\triangle PQR$.
 \begin{solution}[1.75in]
@@ -153,10 +153,20 @@ the tangent line at $t=0$ is given by
 $x-y-z=-1$ and $x-y+z=1$.
 \begin{solution}[1in]
 It's helpful to observe that since
-$\mathbold{n}_1=\left\langle 1,-1,-1\right\rangle$ and
+$\mathbold{n}_1=\left\langle 1,-1,-1\right\rangle$
+is normal to the first plane and
 $\mathbold{n}_2=\left\langle 1,-1,1\right\rangle$
-are normal to the two planes respectively,
-the vector $\mathbold{n}_1\times\mathbold{n_2}$
+is normal to the second plane,
+the vector $\mathbold{n}_1\times\mathbold{n_2}
+=\left\langle -2,-2,0\right)$ is parallel to the
+intersection of the two planes.
+Thus the line of intersection is parallel
+to $\left\langle 1,1,0\right\rangle$.
+By inspection we can see that $\left(0,0,1\right)$
+is on the line of intersection, being on both planes.
+Thus the intersection is given by
+$\left\langle 0,0,1\right\rangle
++t\left\langle 1,1,0\right\rangle$.
 
 \end{solution}
 
