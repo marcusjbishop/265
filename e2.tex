@@ -2,7 +2,7 @@
 \usepackage{graphicx,multicol}
 \usepackage{charter,amsmath,amssymb}
 \usepackage{eulervm}
-\usepackage[letterpaper,margin=1in]{geometry}
+\usepackage[letterpaper,margin=1.25in]{geometry}
 \pagestyle{headandfoot}
 \runningheadrule
 \runningheader{\bf Math 265}
@@ -49,10 +49,10 @@ until all students have taken it, and
 \begin{questions}
 
 \question[25] The temperature of a gas at the point
-$\left(x,y,z\right)$ is given by $G\left(x,y,z\right)
-=x^2-5xy+y^2z$.
+$\left(x,y,z\right)$ is given by \[G\left(x,y,z\right)
+=x^2-5xy+y^2z.\]
 \begin{parts}
-\part What is the rate of change in the temperature
+\part What is the rate of change in temperature
 at the point $\left(1,2,3\right)$ in the direction
 $\mathbold{v}=2\mathbold{i}+\mathbold{j}-4\mathbold{k}$?
 \begin{solution}[2in]
@@ -64,23 +64,22 @@ $\mathbold{v}=2\mathbold{i}+\mathbold{j}-4\mathbold{k}$?
 2,1,-4\right\rangle$
 \item $\nabla G=\left\langle 2x-5y,-5x+2yz,y^2\right\rangle$
 \item So $\nabla G\left(1,2,3\right)
-=\left\langle -8,3,4\right\rangle$
-\item So $G_\mathbold{u}=
+=\left\langle -8,7,4\right\rangle$
+\item So $G_\mathbold{u}\left(1,2,3\right)=
 \frac{1}{\sqrt{21}}\left\langle 2,1,-4\right\rangle\cdot
-=\left\langle -8,3,4\right\rangle=\frac{3}{\sqrt{21}}
-=\frac{\sqrt{21}}{7}$
+\left\langle -8,7,4\right\rangle=\frac{-25}{\sqrt{21}}$
 \end{itemize}
 \end{solution}
 \part In which direction is temperature increasing
 fastest at the point $\left(1,2,3\right)$?
 \begin{solution}[1in]
 $\nabla G\left(1,2,3\right)
-=\left\langle -8,3,4\right\rangle$
+=\left\langle -8,7,4\right\rangle$
 \end{solution}
 \part What is the maximum rate of change of temerature
 at the point $\left(1,2,3\right)$?
 \begin{solution}[1in]
-$\left|\nabla G\left(1,2,3\right)\right|=\sqrt{89}$
+$\left|\nabla G\left(1,2,3\right)\right|=\sqrt{129}$
 \end{solution}
 \end{parts}
 
@@ -150,6 +149,27 @@ $\kappa\left(t\right)$ of the curve
 shown at the right.
 \begin{center}\includegraphics[scale=.4]{Astroid}\end{center}
 \end{multicols}\fi
+\begin{solution}
+\begin{itemize}
+\item $\mathbold{r}'\left(t\right)=
+\left\langle -3\cos^2{t}\sin{t},3\sin^2{t}\cos{t}
+\right\rangle$
+\item $\left|\mathbold{r}'\left(t\right)\right|=
+3\sqrt{\cos^4{t}\sin^2{t}+\sin^4{t}\cos^2{t}}
+=3\left|\cos{t}\sin{t}\right|\sqrt{\sin^2{t}\cos^2{t}}
+=\left|3\cos{t}\sin{t}\right|$
+\item $\mathbold{T}\left(t\right)
+=\frac{1}{\left|3\cos{t}\sin{t}\right|}
+\left\langle -3\cos^2{t}\sin{t},3\sin^2{t}\cos{t}
+\right\rangle
+=\frac{\sin{t}\cos{t}}{\left|\sin{t}\cos{t}\right|}
+\left\langle -\cos{t},\sin{t}\right\rangle$
+\item $\kappa\left(t\right)
+=\frac{\left|\mathbold{T}\left(t\right)\right|}
+{\left|\mathbold{r}'\left(t\right)\right|}
+=\frac{1}{3\sin{t}\cos{t}}$
+\end{itemize}
+\end{solution}
 
 \end{questions}
 \end{document}
