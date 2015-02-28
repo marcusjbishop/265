@@ -6,8 +6,8 @@
 \pagestyle{headandfoot}
 \runningheadrule
 \runningheader{\bf Math 265}
-{\bf Exam One, Page \thepage\ of \numpages}
-{\bf 6 February 2015}
+{\bf Exam Two, Page \thepage\ of \numpages}
+{\bf 4 March 2015}
 \firstpagefooter{}{}{}
 \runningfooter{}{}{}
 \let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
@@ -17,7 +17,7 @@
 \everymath{\displaystyle}
 \begin{document}
 \begin{center}
-\huge Math 265 Exam One\\
+\huge Math 265 Exam Two\\
 \LARGE Spring 2015
 \end{center}
 
@@ -47,14 +47,51 @@ until all students have taken it, and
 \fi
 
 \begin{questions}
+
 \begin{multicols}{2}
-\question[10] Find and classify all
+\question[25] Find and classify all
 the critical points of \[f\left(x,y\right)
 =x^3+y^3-3x-3y\] as local maxima, local minima,
 saddle points, or none of these.
 The contour plot of $f$ is shown at the right.
 \begin{center}\includegraphics[scale=.4]{Saddles}\end{center}
 \end{multicols}
+
+\begin{multicols}{2}
+\question[25] Calculate the curvature
+$\kappa\left(t\right)$ of the curve
+\[\mathbold{r}\left(t\right)
+=\left\langle\cos^3\left(t\right),\sin^3\left(t\right)
+\right\rangle\]
+shown at the right.
+\begin{center}\includegraphics[scale=.4]{Astroid}\end{center}
+\end{multicols}
+
+\question[25] Imagine that you are walking on the surface
+$z=x^2+4y^2+1$ directly above the curve in the
+$xy$-plane given by $\mathbold{r}\left(t\right)
+=\left\langle\cos{t},\sin{t}\right\rangle$
+for $0\le t\le 2\pi$
+in the direction of increasing~$t$.
+\begin{parts}
+\part Calculate $z'\left(t\right)$.
+\part Find the values
+of $t$ for which you are walking uphill. That is,
+find the values of $t$ where $z$ is increasing.
+\end{parts}
+
+\question[25] The temperature of a gas at the point
+$\left(x,y,z\right)$ is given by $G\left(x,y,z\right)
+=x^2-5xy+y^2z$.
+\begin{parts}
+\part What is the rate of change in the temperature
+at the point $\left(1,2,3\right)$ in the direction
+$v=2\mathbold{i}+\mathbold{j}-4\mathbold{k}$?
+\part In which direction is temperature increasing
+fastest at the point $\left(1,2,3\right)$?
+\part What is the maximum rate of change of temerature
+at the point $\left(1,2,3\right)$?
+\end{parts}
 
 \end{questions}
 \end{document}
