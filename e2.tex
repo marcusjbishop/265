@@ -1,8 +1,8 @@
-\documentclass[answers,12pt,addpoints]{exam}
+\documentclass[12pt,addpoints]{exam}
 \usepackage{graphicx,multicol}
 \usepackage{charter,amsmath,amssymb}
 \usepackage{eulervm}
-\usepackage[letterpaper,margin=1.25in]{geometry}
+\usepackage[letterpaper,margin=1in]{geometry}
 \pagestyle{headandfoot}
 \runningheadrule
 \runningheader{\bf Math 265}
@@ -48,40 +48,36 @@ until all students have taken it, and
 
 \begin{questions}
 
-\question[25] The temperature of a gas at the point
-$\left(x,y,z\right)$ is given by \[G\left(x,y,z\right)
-=x^2-5xy+y^2z.\]
+\question[25] Imagine that you are walking on the surface
+$z=x^2+4y^2+1$ directly above the curve in the
+$xy$-plane given by $\mathbold{r}\left(t\right)
+=\left\langle\cos{t},\sin{t}\right\rangle$
+for $0\le t\le 2\pi$
+in the direction of increasing~$t$.
 \begin{parts}
-\part What is the rate of change in temperature
-at the point $\left(1,2,3\right)$ in the direction
-$\mathbold{v}=2\mathbold{i}+\mathbold{j}-4\mathbold{k}$?
-\begin{solution}[2in]
-\begin{itemize}
-\item $\left|\mathbold{v}\right|
-=\sqrt{2^2+1^2+\left(-4\right)^2}
-=\sqrt{21}$
-\item Put $\mathbold{u}=\frac{1}{\sqrt{21}}\left\langle
-2,1,-4\right\rangle$
-\item $\nabla G=\left\langle 2x-5y,-5x+2yz,y^2\right\rangle$
-\item So $\nabla G\left(1,2,3\right)
-=\left\langle -8,7,4\right\rangle$
-\item So $G_\mathbold{u}\left(1,2,3\right)=
-\frac{1}{\sqrt{21}}\left\langle 2,1,-4\right\rangle\cdot
-\left\langle -8,7,4\right\rangle=\frac{-25}{\sqrt{21}}$
-\end{itemize}
+\part Calculate $z'\left(t\right)$.
+\begin{solution}[1.5in]
+\begin{align*}
+z'\left(t\right)&=\frac{\partial z}{\partial x}
+\frac{dx}{dt}+\frac{\partial z}{\partial y}
+\frac{dy}{dt}\\
+&=2x\left(-\sin{t}\right)+8y\cos{t}\\
+&=-2\sin{t}\cos{t}+8\sin{t}\cos{t}\\
+&=6\sin{t}\cos{t}
+\end{align*}
 \end{solution}
-\part In which direction is temperature increasing
-fastest at the point $\left(1,2,3\right)$?
+\part Find the values
+of $t$ for which you are walking uphill. That is,
+find the values of $t$ where $z$ is increasing.
 \begin{solution}[1in]
-$\nabla G\left(1,2,3\right)
-=\left\langle -8,7,4\right\rangle$
-\end{solution}
-\part What is the maximum rate of change of temerature
-at the point $\left(1,2,3\right)$?
-\begin{solution}[1in]
-$\left|\nabla G\left(1,2,3\right)\right|=\sqrt{129}$
+$z'\left(t\right)=6\sin{t}\cos{t}$ is positive
+whenever both $\sin{t}$ and $\cos{t}$ have the same
+sign. This is on the intervals
+$\left(0,\frac{\pi}{2}\right)$ and
+$\left(\frac{3\pi}{2},2\pi\right)$
 \end{solution}
 \end{parts}
+\ifprintanswers\else\newpage\fi
 
 \ifprintanswers\else\begin{multicols}{2}\fi
 \question[25] Find and classify all
@@ -108,36 +104,43 @@ The contour plot of $f$ is shown at the right.
 \end{array}\]
 \end{itemize}
 \end{solution}
+\ifprintanswers\else\newpage\fi
 
-\question[25] Imagine that you are walking on the surface
-$z=x^2+4y^2+1$ directly above the curve in the
-$xy$-plane given by $\mathbold{r}\left(t\right)
-=\left\langle\cos{t},\sin{t}\right\rangle$
-for $0\le t\le 2\pi$
-in the direction of increasing~$t$.
+\question[25] The temperature of a gas at the point
+$\left(x,y,z\right)$ is given by \[G\left(x,y,z\right)
+=x^2-5xy+y^2z.\]
 \begin{parts}
-\part Calculate $z'\left(t\right)$.
-\begin{solution}
-\begin{align*}
-z'\left(t\right)&=\frac{\partial z}{\partial x}
-\frac{dx}{dt}+\frac{\partial z}{\partial y}
-\frac{dy}{dt}\\
-&=2x\left(-\sin{t}\right)+8y\cos{t}\\
-&=-2\sin{t}\cos{t}+8\sin{t}\cos{t}\\
-&=6\sin{t}\cos{t}
-\end{align*}
+\part What is the rate of change in temperature
+at the point $\left(1,2,3\right)$ in the direction
+$\mathbold{v}=2\mathbold{i}+\mathbold{j}-4\mathbold{k}$?
+\begin{solution}[3in]
+\begin{itemize}
+\item $\left|\mathbold{v}\right|
+=\sqrt{2^2+1^2+\left(-4\right)^2}
+=\sqrt{21}$
+\item Put $\mathbold{u}=\frac{1}{\sqrt{21}}\left\langle
+2,1,-4\right\rangle$
+\item $\nabla G=\left\langle 2x-5y,-5x+2yz,y^2\right\rangle$
+\item So $\nabla G\left(1,2,3\right)
+=\left\langle -8,7,4\right\rangle$
+\item So $G_\mathbold{u}\left(1,2,3\right)=
+\frac{1}{\sqrt{21}}\left\langle 2,1,-4\right\rangle\cdot
+\left\langle -8,7,4\right\rangle=\frac{-25}{\sqrt{21}}$
+\end{itemize}
 \end{solution}
-\part Find the values
-of $t$ for which you are walking uphill. That is,
-find the values of $t$ where $z$ is increasing.
-\begin{solution}
-$z'\left(t\right)=6\sin{t}\cos{t}$ is positive
-whenever both $\sin{t}$ and $\cos{t}$ have the same
-sign. This is on the intervals
-$\left(0,\frac{\pi}{2}\right)$ and
-$\left(\frac{3\pi}{2},2\pi\right)$
+\part In which direction is temperature increasing
+fastest at the point $\left(1,2,3\right)$?
+\begin{solution}[2in]
+$\nabla G\left(1,2,3\right)
+=\left\langle -8,7,4\right\rangle$
+\end{solution}
+\part What is the maximum rate of change of temerature
+at the point $\left(1,2,3\right)$?
+\begin{solution}[1in]
+$\left|\nabla G\left(1,2,3\right)\right|=\sqrt{129}$
 \end{solution}
 \end{parts}
+\ifprintanswers\else\newpage\fi
 
 \ifprintanswers\else\begin{multicols}{2}\fi
 \question[25] Calculate the curvature
