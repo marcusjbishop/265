@@ -1,0 +1,65 @@
+\documentclass[12pt]{article}
+\usepackage{multicol,graphicx}
+\usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
+{hyperref} 
+\def\sectionautorefname~#1\null{\S#1\null}
+\usepackage{charter,amsmath,amssymb,breakurl}
+\usepackage{eulervm}
+\usepackage[letterpaper,margin=.75in]{geometry}
+\def\equationautorefname~#1\null{(#1)\null}
+\def\itemautorefname~#1\null{(#1)\null}
+\title{Worksheet 3}
+\author{}\date{}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\arctan\relax\DeclareMathOperator{\arctan}{\mathsf{arctan}}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sec\relax\DeclareMathOperator{\sec}{\mathsf{sec}}
+\let\min\relax\DeclareMathOperator*{\min}{\mathsf{min}}
+\let\max\relax\DeclareMathOperator*{\max}{\mathsf{max}}
+\let\sup\relax\DeclareMathOperator*{\sup}{\mathsf{sup}}
+\let\inf\relax\DeclareMathOperator*{\inf}{\mathsf{inf}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{enumerate}
+\item Evaluate the following integrals as iterated
+integrals, choosing
+an appropriate integration order $dxdy$ or $dydx$.
+\begin{enumerate}
+\item $\int_R\left(y+1\right)e^{x\left(y+1\right)}\;dA$
+where $R$ is the rectangle $0\le x\le 1$, $-1\le y\le 1$
+\vspace{.75cm}
+\item $\int_R x\sec^2{xy}\; dA$ where $R$
+is the rectangle $0\le x\le\frac{\pi}{3}$,$0\le y\le 1$
+\vspace{.75cm}
+\item $\int_R12y\;dA$ where $R$ is the region bounded
+by $y=2$, $y=\sqrt{x}$, and $y=0$
+\vspace{.75cm}
+\item $\int_R\left(x+y\right)dA$ where $R$ is the region
+bounded by $y=\left|x\right|$ and $y=4$
+\vspace{.75cm}
+\end{enumerate}
+
+\item Find the volumes of the following solids
+\begin{enumerate}
+\item The tetrahedron bounded by the coordinate planes
+$x=0,y=0,z=0$ and the plane $z=8-2x-4y$
+\item The segment of the cylinder $x^2+y^2=1$ bounded
+above by the plane $z=12+x+y$ and below by $z=0$
+\end{enumerate}
+
+\item Evaluate the following double integrals.
+\begin{enumerate}
+\item $\int_0^1\int_y^1e^{x^2}dxdy$
+\vspace{.75cm}
+\item $\int_0^{\sqrt[3]{\pi}}\int_y^{\sqrt[3]{\pi}}
+x^4\cos\left(x^2y\right)dxdy$
+\vspace{.75cm}
+\item $\int_0^2\int_0^{4-x^2}\frac{xe^{2y}}{4-y}dydx$
+\end{enumerate}
+\end{enumerate}
+\end{document}
