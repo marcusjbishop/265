@@ -1,0 +1,55 @@
+\documentclass[12pt]{article}
+\usepackage{multicol,graphicx}
+\usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
+{hyperref} 
+\def\sectionautorefname~#1\null{\S#1\null}
+\usepackage{charter,amsmath,amssymb,breakurl}
+\usepackage{eulervm}
+\usepackage[letterpaper,margin=.75in]{geometry}
+\def\equationautorefname~#1\null{(#1)\null}
+\def\itemautorefname~#1\null{(#1)\null}
+\title{Some Worksheet 3 Solutions}
+\author{}\date{}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\arctan\relax\DeclareMathOperator{\arctan}{\mathsf{arctan}}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sec\relax\DeclareMathOperator{\sec}{\mathsf{sec}}
+\let\min\relax\DeclareMathOperator*{\min}{\mathsf{min}}
+\let\max\relax\DeclareMathOperator*{\max}{\mathsf{max}}
+\let\sup\relax\DeclareMathOperator*{\sup}{\mathsf{sup}}
+\let\inf\relax\DeclareMathOperator*{\inf}{\mathsf{inf}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{enumerate}
+\item
+\begin{enumerate}
+\item $\int_{-1}^1\int_0^1\left(y+1\right)e^{x\left(y+1\right)}dxdy
+=\int_{-1}^1\left.e^{x\left(y+1\right)}\right|_0^1\;dy
+=\int_{-1}^1\left(e^{y+1}-1\right)dy=e^2-3$
+\end{enumerate}
+\item
+\begin{enumerate}
+\item $\int_0^1\int_0^xe^{x^2}dydx
+=\int_0^1xe^{x^2}dx=\frac{e-1}{2}$
+\end{enumerate}
+\item
+\begin{enumerate}
+\item
+\item $\int_{-1}^1\int_{-\sqrt{1-x^2}}^{\sqrt{1-x^2}}
+\left(12+x+y\right)dydx
+=\cdots
+=\int_{-1}^1\left(24\sqrt{1-x^2}+2x\sqrt{1-x^2}\right)dx$
+
+You can evaluate the first integral using the trig substitution $x=\sin{t}$
+and the second integral using the fact
+that the integrand is odd, so the integral is zero.
+You can also make the substitution $u=1-x^2$ to evaluate the second integral.
+The first integral (and hence the answer to the problem) is $12\pi$.
+\end{enumerate}
+\end{enumerate}
+\end{document}
