@@ -1,0 +1,72 @@
+\documentclass[answers,12pt,addpoints]{exam}
+\usepackage{graphicx,multicol}
+\usepackage{charter,amsmath,amssymb}
+\usepackage{eulervm}
+\usepackage[letterpaper,margin=1in]{geometry}
+\pagestyle{headandfoot}
+\runningheadrule
+\runningheader{\bf Math 265}
+{\bf Exam Three, Page \thepage\ of \numpages}
+{\bf 10 April 2015}
+\firstpagefooter{}{}{}
+\runningfooter{}{}{}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\begin{center}
+\huge Math 265 Exam Three\\
+\LARGE Spring 2015
+\end{center}
+
+\ifprintanswers\else
+\begin{center}
+\fbox{\fbox{\parbox{5.5in}{
+This exam has \numquestions~questions.
+It has been printed on \numpages~pages and is worth \numpoints~points.
+Answer all the questions in the spaces provided.
+%The last page has been left blank for your calculations.
+Although you may use any calculator on this exam,
+you must clearly indicate how you arrived at your answers
+in order to receive maximum credit.
+By signing below, you pledge that you
+\begin{enumerate}
+\item will not communicate to any person in any conceivable way anything
+about the contents of this exam
+until all students have taken it, and
+\item have not been the recipient of such communication from anyone else.
+\end{enumerate}}}}
+\end{center}
+\vspace{.2in}
+\makebox[\textwidth]{Your signature:\enspace\hrulefill}\\
+\vspace{.2in}\\
+\makebox[\textwidth]{Your name:\enspace\hrulefill}\\
+\begin{center}\gradetable[h][questions]\end{center}
+\fi
+
+\begin{questions}
+
+\question[25] Evaluate the integral
+$\int_0^1\int_{e^y}^e\frac{x}{\ln{x}}dxdy$.
+\begin{solution}
+Changing the order of integration gives
+\[\int_1^e\int_0^{\ln{x}}\frac{x}{\ln{x}}dydx
+=\int_1^e\left.\frac{xy}{\ln{x}}\right|_0^{\ln{x}}dx
+=\int_1^ex\;dx=\left.\frac{x^2}{2}\right|_1^e
+=\frac{e^2-1}{2}\]
+\end{solution}
+
+\begin{multicols}{2}
+\question[25] Calculate $\int_R\sqrt{x^2+y^2}\;dA$ where $R$
+is the annular region shown at the right.
+\begin{center}\includegraphics[scale=.25]{WasherWedge}\end{center}
+\end{multicols}
+
+\question[25] Evaluate the integral
+$\int_0^1\int_0^{\sqrt{1-x^2}}\int_0^{\sqrt{x^2+y^2}}
+\frac{dzdydx}{\left(x^2+y^2+z^2\right)^2}$.
+
+\end{questions}
+\end{document}
