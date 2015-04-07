@@ -26,8 +26,9 @@
 \thispagestyle{empty}
 
 \begin{enumerate}
-\item Calculate the area of the crescent moon formed by
-the circles $x^2+y^2=16$ and $\left(x+3\right)^2+y^2=9$
+\item Set up an integral to calculate
+the area of the crescent moon formed by
+the circles $x^2+y^2=9$ and $\left(x+4\right)^2+y^2=25$
 by following the following steps.
 \begin{enumerate}
 \item Write polar equations for both circles.
@@ -39,7 +40,7 @@ of the moon.
 
 \item Evaluate the integral
 $\int_0^1\int_0^{\sqrt{1-x^2}}\int_0^{\sqrt{x^2+y^2}}
-\frac{dzdydx}{\left(x^2+y^2+z^2\right)^2}$.
+\frac{dzdydx}{\left(x^2+y^2+z^2\right)^{1/2}}$.
 
 \item Find the mass of the triangular plate with vertices
 $\left(0,4\right)$, $\left(4,0\right)$, $\left(-2,0\right)$
@@ -81,9 +82,16 @@ $\int_0^1\int_y^1\sin\left(x^2\right)dxdy$.
 
 {\bf Answers:}
 \begin{enumerate}
-\item $13.95$
-\item
-\item
+\item\begin{enumerate}
+\item $r^2+8r\cos{\theta}=9$ and $r=3$
+\item $r=-4\cos{\theta}+\sqrt{16\cos^2{\theta}+9}$ and $r=3$
+\item The two curves intersect where $\theta=\pm\frac{\pi}{2}$ so the
+area is given by \[\int_{-\pi/2}^{\pi/2}\int
+_{-4\cos{\theta}+\sqrt{16\cos^2{\theta}+9}}^3r\;drd\theta\approx 10\]
+\end{enumerate}
+\item $\int_0^{\pi/2}\int_0^{\pi/2}\int_0^1\rho\sin{\phi}
+d\rho d\phi d\theta=\frac{\pi}{4}$
+\item $\int_0^4\int_{\frac{y}{2}-2}^{4-y}y\;dxdy=16$
 \item Zero, zero, zero, negative, positive
 \item $\int_{-1}^1\int_{-\frac{1}{2}-\frac{x}{2}}
 ^{\frac{1}{2}-\frac{x}{2}}\int_{-1}^{x+2y}
@@ -92,7 +100,8 @@ f\left(x,y,z\right)dzdydx
 ^1\int_{-1}^1
 f\left(x,y,z\right)dzdydx$
 \item $64\sqrt{6}\pi$
-\item
+\item $\int_0^{2\pi}\int_0^{\pi/2}\int_a^b\rho^2\sin{\phi}
+d\rho d\phi d\theta=2\pi\frac{b^3-a^3}{3}$
 \item $\frac{1-\cos{1}}{2}$
 \end{enumerate}
 \end{document}
