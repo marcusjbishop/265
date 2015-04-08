@@ -1,4 +1,4 @@
-\documentclass[12pt,addpoints]{exam}
+\documentclass[answers,12pt,addpoints]{exam}
 \usepackage{graphicx,multicol}
 \usepackage{charter,amsmath,amssymb}
 \usepackage{eulervm}
@@ -64,20 +64,34 @@ Changing the order of integration gives
 is the annular region shown at the right.
 \begin{center}\includegraphics[scale=.25]{WasherWedge}\end{center}
 \end{multicols}
+\begin{solution}
+\[\int_{\pi/2}^\pi\int_1^2r^2\;drd\theta
+=\frac{7}{3}\int_{\pi/2}^\pi\;d\theta=\frac{7\pi}{6}\]
+\end{solution}
 \ifprintanswers\else\newpage\fi
 
 \begin{multicols}{2}
 \question[25] A cube of side length~1 is composed
-of two materials, seperated by a plane slanting down
+of two materials, separated by a plane slanting down
 from the top corner to cut the bottom face in a diagonal,
 as shown at the right. The material above the plane
 has density $\delta\left(x,y,z\right)~\mathsf{g}/\mathsf{m}^3$
 and the material
-above the plane has density
+below the plane has density
 $\epsilon\left(x,y,z\right)~\mathsf{g}/\mathsf{m}^3$.
-Write down an interated integral to find the mass of the cube.
+Write down an iterated integral to find the mass of the cube.
 \begin{center}\includegraphics[scale=.5]{BoxPlane}\end{center}
 \end{multicols}
+\begin{solution}
+\begin{multline*}
+\int_0^1\int_0^{1-x}\int_{1-x-y}^1
+\delta\left(x,y,z\right)\;dzdydx
++\int_0^1\int_0^{1-x}\int_0^{1-x-y}
+\epsilon\left(x,y,z\right)\;dzdydx\\
++\int_0^1\int_{1-x}^1\int_0^1
+\delta\left(x,y,z\right)\;dzdydx
+\end{multline*}
+\end{solution}
 \ifprintanswers\else\newpage\fi
 
 \question[25] 
