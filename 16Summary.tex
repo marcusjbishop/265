@@ -1,0 +1,145 @@
+\documentclass[12pt]{article}
+\usepackage{multicol,graphicx}
+\usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
+{hyperref} 
+\def\sectionautorefname~#1\null{\S#1\null}
+\usepackage{charter,amsmath,amssymb,breakurl}
+\usepackage{eulervm}
+\usepackage[letterpaper,margin=.75in]{geometry}
+\def\equationautorefname~#1\null{(#1)\null}
+\def\itemautorefname~#1\null{(#1)\null}
+\title{Chapter 16 Summary}
+\author{}\date{}
+\let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
+\let\arctan\relax\DeclareMathOperator{\arctan}{\mathsf{arctan}}
+\let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sec\relax\DeclareMathOperator{\sec}{\mathsf{sec}}
+\let\min\relax\DeclareMathOperator*{\min}{\mathsf{min}}
+\let\max\relax\DeclareMathOperator*{\max}{\mathsf{max}}
+\let\sup\relax\DeclareMathOperator*{\sup}{\mathsf{sup}}
+\let\inf\relax\DeclareMathOperator*{\inf}{\mathsf{inf}}
+\let\lim\relax\DeclareMathOperator*{\lim}{\mathsf{lim}}
+\everymath{\displaystyle}
+\begin{document}
+\maketitle
+\thispagestyle{empty}
+
+\begin{enumerate}
+\item{\bf Line integrals.}
+If $\mathbold{F}$ is a vector field and
+$C$ is a path, we calculate $\int_C\mathbold{F}\cdot d\mathbold{r}$ using
+\[\int_a^b\mathbold{F}\left(\mathbold{r}\left(t\right)\right)\;dt\]
+where $\mathbold{r}\left(t\right)$ parameterizes $C$
+as $t$ ranges from $a$ to $b$.
+
+\item If $C$ is a loop then
+$\int_C\mathbold{F}\cdot d\mathbold{r}$
+is denoted by
+$\oint_C\mathbold{F}\cdot d\mathbold{r}$.
+
+\item $\mathbold{F}$ is called {\em conservative} or {\em
+path independent} if for any points $P,Q$ in the domain of $\mathbold{F}$
+the line integral
+$\int_C\mathbold{F}\cdot d\mathbold{r}$ is the same for any
+path $C$ from $P$ to $Q$.
+
+\item{\bf Fundamental theorem of line integrals.}
+$\int_C\mathbold{F}\cdot d\mathbold{r}=f\left(Q\right)-f\left(P\right)$
+if $\mathbold{F}=\nabla f$
+\item The following are equivalent.
+\begin{enumerate}
+\item $\mathbold{F}$ is conservative.
+\item $\oint_C\mathbold{F}\cdot d\mathbold{r}=0$
+for any loop $C$
+\item $\mathbold{F}=\nabla f$ for some function $f$
+\end{enumerate}
+
+\item A region $R$ is called {\em path independent}
+if for any two points $P,Q$ in $R$ there exists
+a path from $P$ to $Q$ lying entirely in $R$.
+
+\item A region $R$ is called {\em simply connected}
+if any loop can be contracted to a point.
+
+\item If $\mathbold{F}=\left\langle P,Q,R\right\rangle$
+is a vector field in $\mathbb{R}^3$
+we define the curl and divergence of $\mathbold{F}$ by
+\begin{align*}
+\mathsf{curl}\left(\mathbold{F}\right)
+&=\nabla\times\mathbold{F}
+=\begin{vmatrix}
+\mathbold{i}&\mathbold{j}&\mathbold{k}\\
+\frac{\partial}{\partial x}&\frac{\partial}{\partial y}
+&\frac{\partial}{\partial z}\\P&Q&R 
+\end{vmatrix}
+=\left\langle R_y-Q_z,P_z-R_x,Q_x-P_y\right\rangle\\
+\mathsf{div}\left(\mathbold{F}\right)
+&=\nabla\cdot\mathbold{F}=\left\langle P_x,Q_y,R_z\right\rangle
+\end{align*}
+If $\mathbold{F}$ is a vector field in $\mathbb{R}^2$
+then we define
+$\mathsf{curl}\left(\mathbold{F}\right)
+=Q_x-P_y$
+
+\item{\bf Curl test.} If the domain of $\mathbold{F}$
+is path connected and simply connected then
+$\mathbold{F}$ is conservative if and only if $\mathsf{curl}
+\left(\mathbold{F}\right)=\mathbold{0}$.
+
+\item{\bf Green's theorem.}
+\begin{enumerate}
+\item If $\mathbold{F}=\left\langle P,Q\right\rangle$ is a vector
+space in $\mathbb{R}^2$, $C$ is a loop,
+and $R$ is the region inside $C$ then
+\begin{equation}\label{Green1}
+\oint_C Pdx+Qdy
+=\int_C\mathbold{F}\cdot d\mathbold{r}
+=\int_R\left(Q_x-P_y\right)\mathbold{F}\;dA
+\end{equation}
+\item Replacing $P,Q$ in \autoref{Green1} with $-Q,P$ gives
+the equivalent form
+\begin{equation}\label{Green2}
+\oint_C Pdy-Qdx
+=\int_R\left(P_x+Q_y\right)\mathbold{F}\;dA
+\end{equation}
+\item The left-hand side of \autoref{Green2} gives
+the {\em outward flux} of $\mathbold{F}$ over $C$
+and is denoted by $\oint_C\mathbold{F}\cdot\mathbold{n}\;ds$.
+\end{enumerate}
+
+\item Suppose $S$ is a surface parameterized by
+$\mathbold{r}\left(u,v\right)
+=\left\langle f\left(u,v\right),g\left(u,v\right),h\left(u,v\right)
+\right\rangle$ with $a\le u\le b$ and $c\le v\le d$
+\begin{enumerate}
+\item The area of $S$ is given by
+\begin{equation}\label{Area}
+\int_c^d\int_a^b\left|\mathbold{r}_u\times\mathbold{r}_v
+\right|\;dudv
+\end{equation}
+\item Denoting $\left|\mathbold{r}_u\times\mathbold{r}_v\right|\;dudv$
+by $d\sigma$ we can write \autoref{Area} by
+$\int_Sd\sigma$.
+\item More generally, if $\mathbold{F}\left(x,y,z\right)$
+is a vector field and $\mathbold{n}\left(u,v\right)$
+is a unit normal to $S$ at $\mathbold{r}\left(u,v\right)$
+then the {\em flux} of $\mathbold{F}$ through $S$
+is given by
+\[\int_S\mathbold{F}\cdot\mathbold{n}\;d\sigma
+=\int_c^d\int_a^b\left(
+\mathbold{F}\left(\mathbold{r}\left(u,v\right)\right)
+\cdot\mathbold{n}\left(u,v\right)\rule{0pt}{12pt}\right)
+\left|\mathbold{r}_u\times\mathbold{r}_v
+\right|\;dudv\]
+\end{enumerate}
+
+\item{\bf Stokes theorem.}
+If $C$ is the boundary of a surface $S$
+with unit normal $\mathbold{n}$ then
+\[\oint_C\mathbold{F}\cdot d\mathbold{r}
+=\int_S\mathsf{curl}\left(\mathbold{F}\right)
+\cdot\mathbold{n}\;d\sigma\]
+\end{enumerate}
+\end{document}
+
