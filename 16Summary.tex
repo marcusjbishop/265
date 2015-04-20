@@ -28,15 +28,19 @@
 \begin{enumerate}
 \item{\bf Line integrals.}
 If $\mathbold{F}$ is a vector field and
-$C$ is a path, we calculate $\int_C\mathbold{F}\cdot d\mathbold{r}$ using
-\[\int_a^b\mathbold{F}\left(\mathbold{r}\left(t\right)\right)\;dt\]
+$C$ is a path, we calculate $\int_C\mathbold{F}\cdot d\mathbold{r}$ by
+\[\int_a^b\mathbold{F}\left(\mathbold{r}\left(t\right)\right)
+\cdot\mathbold{r}'\left(t\right)\;dt\]
 where $\mathbold{r}\left(t\right)$ parameterizes $C$
 as $t$ ranges from $a$ to $b$.
+The value $\int_C\mathbold{F}\cdot d\mathbold{r}$ represents
+the {\em work} done by $\mathbold{F}$ in moving a particle along $C$.
 
 \item If $C$ is a loop then
 $\int_C\mathbold{F}\cdot d\mathbold{r}$
 is denoted by
-$\oint_C\mathbold{F}\cdot d\mathbold{r}$.
+$\oint_C\mathbold{F}\cdot d\mathbold{r}$ and called the
+{\em circulation} of $\mathbold{F}$ around $C$.
 
 \item $\mathbold{F}$ is called {\em conservative} or {\em
 path independent} if for any points $P,Q$ in the domain of $\mathbold{F}$
@@ -45,8 +49,11 @@ $\int_C\mathbold{F}\cdot d\mathbold{r}$ is the same for any
 path $C$ from $P$ to $Q$.
 
 \item{\bf Fundamental theorem of line integrals.}
-$\int_C\mathbold{F}\cdot d\mathbold{r}=f\left(Q\right)-f\left(P\right)$
-if $\mathbold{F}=\nabla f$
+If $\mathbold{F}=\nabla f$ then
+\[\int_C\mathbold{F}\cdot d\mathbold{r}=f\left(Q\right)-f\left(P\right).\]
+$f$ is called a {\em conservative function}
+of $\mathbold{F}$ if $\mathbold{F}=\nabla f$.
+
 \item The following are equivalent.
 \begin{enumerate}
 \item $\mathbold{F}$ is conservative.
@@ -55,7 +62,7 @@ for any loop $C$
 \item $\mathbold{F}=\nabla f$ for some function $f$
 \end{enumerate}
 
-\item A region $R$ is called {\em path independent}
+\item A region $R$ is called {\em path connected}
 if for any two points $P,Q$ in $R$ there exists
 a path from $P$ to $Q$ lying entirely in $R$.
 
@@ -77,7 +84,8 @@ we define the curl and divergence of $\mathbold{F}$ by
 \mathsf{div}\left(\mathbold{F}\right)
 &=\nabla\cdot\mathbold{F}=\left\langle P_x,Q_y,R_z\right\rangle
 \end{align*}
-If $\mathbold{F}$ is a vector field in $\mathbb{R}^2$
+If $\mathbold{F}=\left\langle P,Q\right\rangle$ 
+is a vector field in $\mathbb{R}^2$
 then we define
 $\mathsf{curl}\left(\mathbold{F}\right)
 =Q_x-P_y$
@@ -91,11 +99,11 @@ $\mathbold{F}$ is conservative if and only if $\mathsf{curl}
 \begin{enumerate}
 \item If $\mathbold{F}=\left\langle P,Q\right\rangle$ is a vector
 space in $\mathbb{R}^2$, $C$ is a loop,
-and $R$ is the region inside $C$ then
+and $R$ is the region inside $C$, then
 \begin{equation}\label{Green1}
 \oint_C Pdx+Qdy
 =\int_C\mathbold{F}\cdot d\mathbold{r}
-=\int_R\left(Q_x-P_y\right)\mathbold{F}\;dA
+=\oint_R\left(Q_x-P_y\right)\mathbold{F}\;dA
 \end{equation}
 \item Replacing $P,Q$ in \autoref{Green1} with $-Q,P$ gives
 the equivalent form
