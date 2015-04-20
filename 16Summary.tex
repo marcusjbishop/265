@@ -51,15 +51,15 @@ path $C$ from $P$ to $Q$.
 \item{\bf Fundamental theorem of line integrals.}
 If $\mathbold{F}=\nabla f$ then
 \[\int_C\mathbold{F}\cdot d\mathbold{r}=f\left(Q\right)-f\left(P\right).\]
-$f$ is called a {\em conservative function}
+$f$ is called a {\em potential function}
 of $\mathbold{F}$ if $\mathbold{F}=\nabla f$.
 
 \item The following are equivalent.
 \begin{enumerate}
 \item $\mathbold{F}$ is conservative.
 \item $\oint_C\mathbold{F}\cdot d\mathbold{r}=0$
-for any loop $C$
-\item $\mathbold{F}=\nabla f$ for some function $f$
+for any loop $C$.
+\item $\mathbold{F}=\nabla f$ for some function $f$.
 \end{enumerate}
 
 \item A region $R$ is called {\em path connected}
@@ -67,7 +67,7 @@ if for any two points $P,Q$ in $R$ there exists
 a path from $P$ to $Q$ lying entirely in $R$.
 
 \item A region $R$ is called {\em simply connected}
-if any loop can be contracted to a point.
+if any loop in $R$ can be contracted to a point.
 
 \item If $\mathbold{F}=\left\langle P,Q,R\right\rangle$
 is a vector field in $\mathbb{R}^3$
@@ -88,7 +88,7 @@ If $\mathbold{F}=\left\langle P,Q\right\rangle$
 is a vector field in $\mathbb{R}^2$
 then we define
 $\mathsf{curl}\left(\mathbold{F}\right)
-=Q_x-P_y$
+=Q_x-P_y$.
 
 \item{\bf Curl test.} If the domain of $\mathbold{F}$
 is path connected and simply connected then
@@ -103,13 +103,13 @@ and $R$ is the region inside $C$, then
 \begin{equation}\label{Green1}
 \oint_C Pdx+Qdy
 =\int_C\mathbold{F}\cdot d\mathbold{r}
-=\oint_R\left(Q_x-P_y\right)\mathbold{F}\;dA
+=\oint_R\left(Q_x-P_y\right)\;dA
 \end{equation}
 \item Replacing $P,Q$ in \autoref{Green1} with $-Q,P$ gives
 the equivalent form
 \begin{equation}\label{Green2}
 \oint_C Pdy-Qdx
-=\int_R\left(P_x+Q_y\right)\mathbold{F}\;dA
+=\int_R\left(P_x+Q_y\right)\;dA
 \end{equation}
 \item The left-hand side of \autoref{Green2} gives
 the {\em outward flux} of $\mathbold{F}$ over $C$
@@ -127,7 +127,7 @@ $\mathbold{r}\left(u,v\right)
 \right|\;dudv
 \end{equation}
 \item Denoting $\left|\mathbold{r}_u\times\mathbold{r}_v\right|\;dudv$
-by $d\sigma$ we can write \autoref{Area} by
+by $d\sigma$ we can write \autoref{Area} as
 $\int_Sd\sigma$.
 \item More generally, if $\mathbold{F}\left(x,y,z\right)$
 is a vector field and $\mathbold{n}\left(u,v\right)$
@@ -136,15 +136,16 @@ then the {\em flux} of $\mathbold{F}$ through $S$
 is given by
 \[\int_S\mathbold{F}\cdot\mathbold{n}\;d\sigma
 =\int_c^d\int_a^b\left(
-\mathbold{F}\left(\mathbold{r}\left(u,v\right)\right)
+\mathbold{F}\left(f\left(u,v\right),g\left(u,v\right),
+h\left(u,v\right)\rule{0pt}{11pt}\right)
 \cdot\mathbold{n}\left(u,v\right)\rule{0pt}{12pt}\right)
 \left|\mathbold{r}_u\times\mathbold{r}_v
 \right|\;dudv\]
 \end{enumerate}
 
-\item{\bf Stokes theorem.}
-If $C$ is the boundary of a surface $S$
-with unit normal $\mathbold{n}$ then
+\item{\bf Stoke's theorem.}
+If $S$ is a surface with unit normal $\mathbold{n}$
+and boundary $C$ oriented according to the right-hand rule, then
 \[\oint_C\mathbold{F}\cdot d\mathbold{r}
 =\int_S\mathsf{curl}\left(\mathbold{F}\right)
 \cdot\mathbold{n}\;d\sigma\]
