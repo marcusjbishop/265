@@ -1,10 +1,14 @@
 \documentclass[12pt]{article}
+\usepackage[colorlinks,breaklinks,linkcolor=red,citecolor=blue]
+{hyperref} 
 \usepackage{graphicx,multicol,mdwlist}
+\def\itemautorefname~#1\null{(#1)\null}
 \usepackage{charter,amsmath,amssymb,breakurl}
 \usepackage{eulervm}
 \usepackage[letterpaper,margin=1in]{geometry}
 \title{Math 265 Quiz 4 Solutions}\author{}\date{}
 \let\cos\relax\DeclareMathOperator{\cos}{\mathsf{cos}}
+\let\sin\relax\DeclareMathOperator{\sin}{\mathsf{sin}}
 \let\ln\relax\DeclareMathOperator{\ln}{\mathsf{ln}}
 \everymath{\displaystyle}
 \begin{document}
@@ -48,7 +52,7 @@ with $\frac{3\pi}{4}
 \cdot d\mathbold{r}$ using Green's Theorem.\\
 {\bf Solution.}
 $\mathsf{curl}\left(\mathbold{F}\right)=-6$ by
-\ref{First}, so
+\autoref{First}, so
 \[\int_R-6\;dA=\int_{3\pi/4}^{7\pi/4}\int_0^{\sqrt{2}}-6r
 \;drd\theta
 =-3\left.\int_{3\pi/4}^{7\pi/4}r^2\right|_0^{\sqrt{2}}\;d\theta

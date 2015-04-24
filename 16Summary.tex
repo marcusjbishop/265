@@ -49,7 +49,8 @@ $\int_C\mathbold{F}\cdot d\mathbold{r}$ is the same for any
 path $C$ from $P$ to $Q$.
 
 \item{\bf Fundamental theorem of line integrals.}
-If $\mathbold{F}=\nabla f$ then
+If $\mathbold{F}=\nabla f$ and $C$ is any curve
+connecting the points $P,Q$ then
 \[\int_C\mathbold{F}\cdot d\mathbold{r}=f\left(Q\right)-f\left(P\right).\]
 $f$ is called a {\em potential function}
 of $\mathbold{F}$ if $\mathbold{F}=\nabla f$.
@@ -69,7 +70,8 @@ a path from $P$ to $Q$ lying entirely in $R$.
 \item A region $R$ is called {\em simply connected}
 if any loop in $R$ can be contracted to a point.
 
-\item If $\mathbold{F}=\left\langle P,Q,R\right\rangle$
+\item\label{Curl}
+If $\mathbold{F}=\left\langle P,Q,R\right\rangle$
 is a vector field in $\mathbb{R}^3$
 we define the curl and divergence of $\mathbold{F}$ by
 \begin{align*}
@@ -145,10 +147,16 @@ h\left(u,v\right)\rule{0pt}{11pt}\right)
 
 \item{\bf Stoke's theorem.}
 If $S$ is a surface with unit normal $\mathbold{n}$
-and boundary $C$ oriented according to the right-hand rule, then
-\[\oint_C\mathbold{F}\cdot d\mathbold{r}
+and boundary $C$ oriented according to the right-hand rule
+with respect to $\mathbold{n}$, then
+\begin{equation}\label{Stokes}
+\oint_C\mathbold{F}\cdot d\mathbold{r}
 =\int_S\mathsf{curl}\left(\mathbold{F}\right)
-\cdot\mathbold{n}\;d\sigma\]
+\cdot\mathbold{n}\;d\sigma.
+\end{equation}
+The right-hand side of \autoref{Stokes} is often
+denoted by $\int_S\nabla\times\mathbold{F}\cdot\mathbold{n}\;
+d\sigma$ using the notation from \autoref{Curl}.
 \end{enumerate}
 \end{document}
 
