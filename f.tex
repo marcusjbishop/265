@@ -1,0 +1,158 @@
+\documentclass[12pt]{exam}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+
+\newcommand{\class}{Math 265}
+\newcommand{\term}{Spring 2015}
+\newcommand{\examnum}{Final Exam}
+\newcommand{\examdate}{Makeup Version}
+\newcommand{\timelimit}{120 Minutes}
+\newcommand{\vect}[1]{\overrightarrow{#1}}
+\newcommand{\ve}[1]{{\bf #1}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\der}[2]{\frac{d #1}{d #2}}
+\newcommand{\vcomp}[3]{#1 \ve{i}+ #2 \ve{j} + #3\ve{k}}
+\newcommand{\vcomps}[2]{#1 \ve{i}+ #2 \ve{j}}
+
+\pagestyle{head}
+\firstpageheader{}{}{}
+\runningheader{\class}{\examnum\ - Page \thepage\ of \numpages}{\examdate}
+\runningheadrule
+
+\begin{document}
+
+\noindent
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}} r @{\extracolsep{6pt}} l}
+\textbf{\class} & \textbf{Name:} & \makebox[2in]{\hrulefill}\\
+\textbf{\term} &&\\
+\textbf{\examnum} &&\\
+\textbf{\examdate} &&\\
+\textbf{Time Limit: \timelimit} & Section & \makebox[2in]{\hrulefill}
+\end{tabular*}\\
+\rule[2ex]{\textwidth}{2pt}
+
+{\bf This test is closed book and closed notes. A 
+(graphing) calculator is allowed for this test but 
+cannot also be a communication device (i.e., your 
+iPhone is not a calculator). Answer each question 
+completely using \underbar{exact values} unless 
+otherwise indicated. Show your work (legibly); answers 
+without work and/or justifications will not receive 
+credit. Place your final answer in the space provided. 
+This exam contains \numpages\ pages (including this 
+cover page) and \numquestions\ questions. Show all of 
+your work for full credit. }
+
+\begin{center}
+Grade Table (for teacher use only)\\
+\addpoints
+\gradetable[v][questions]
+\end{center}
+
+\noindent
+\rule[2ex]{\textwidth}{2pt}
+
+\newpage
+
+\begin{questions}
+
+\question[15] 
+\begin{parts}
+\part Find an equation for the plane containing the
+points $P\left(1,0,3\right)$, $Q\left(0,4,2\right)$,
+and $R\left(1,1,1\right)$.
+\vfill
+\uplevel{\makebox[\textwidth]{Equation:\enspace\hrulefill}}
+\part Find the area of the triangle $\triangle PQR$.
+\vfill
+\uplevel{\makebox[\textwidth]{Area:\enspace\hrulefill}}
+\end{parts}
+\newpage
+
+\question[15]
+The trajectory of a moving object is
+given by $\mathbf{r}\left(t\right)
+=\left\langle e^t\cos{t},e^t\sin{t},e^t\right\rangle$.
+Calculate the tangential and normal components 
+$a_T$ and $a_N$ of its
+acceleration $\mathbf{r}''\left(t\right)$. You need
+not calculate $\mathbf{r}''\left(t\right)$,
+$\mathbf{T}\left(t\right)$, or $\mathbf{N}\left(t\right)$.
+\vfill
+\uplevel{\makebox[\textwidth]
+{$a_T$:\enspace\hrulefill\;$a_N$:\enspace\hrulefill}}
+\newpage
+
+\question[15]
+Consider the plane $\Pi$ defined by
+$\sin{xyz}=\frac{1}{2}$ and the 
+point $P=\left(\pi,1,\frac{1}{6}\right)$.
+\begin{parts}
+\part Calculate an equation for the tangent plane to $\Pi$
+at $P$.
+\vfill
+\uplevel{\makebox[\textwidth]{Equation:\enspace\hrulefill}}
+\part Calculate an equation for the normal line to $\Pi$
+through $P$.
+\vfill
+\uplevel{\makebox[\textwidth]{Equation:\enspace\hrulefill}}
+\end{parts}
+\newpage
+
+\question[15] Find and classify all critical points
+of  $f\left(x,y\right)=x^4-4xy+2y^2$ as local maxima,
+local minima, or saddle points.
+\vfill
+\begin{tabular}{|r|p{1.5in}|p{1.5in}|p{1.5in}|}
+\hline\rule{0pt}{24pt}Point&&&\\\hline
+Classification\rule{0pt}{24pt}&&&\\\hline
+\end{tabular}
+\newpage
+
+\question[15] Evaluate 
+$\displaystyle\int_0^4\int_{\sqrt{x}}^2\frac{x}{y^5+1}dydx$
+by changing the order of integration.
+\vfill
+$\displaystyle\int_0^4\int_{\sqrt{x}}^2\frac{x}{y^5+1}dydx
+=\underline{\int\hspace{1cm}\int\hspace{1in}dxdy}
+=\underline{\phantom{\int}\hspace{1in}}$
+\newpage
+
+\question[15] Find the mass and center of mass of a
+thin plate of density $\delta(x,y)=x+y$
+bounded by the lines $y=0$, $y=1-x$, and $y=1+x$.
+\vfill
+\uplevel{\makebox[\textwidth]
+{Mass:\enspace\hrulefill\;$\overline{x}$:\enspace\hrulefill\;
+$\overline{y}$:\enspace\hrulefill}}
+\newpage
+
+\question[15] Let $\ve{F}=(x^2-y^2)\ve{i}+(xy+y^2)\ve{j}$ and $C:$ the path along the semicircle $y = \sqrt{4- x^2}$ from $(1,\ 0)$ to $(-1,0)$ and then along the
+$x$-axis from $(-1,0)$  back to $(1,0)$. Use Green's Theorem to find
+
+\begin{enumerate}
+\item the counterclockwise circulation $\oint_C\ve{F}\cdot\ve{T}\,ds$.\vskip3.5in
+
+\hskip2in $\oint_C\ve{F}\cdot\ve{T}\,ds=\underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}$
+\item  the outward flux $\oint_C\ve{F}\cdot\ve{n}\,ds$.\vskip3.5in
+
+\hskip2in $\oint_C\ve{F}\cdot\ve{n}\,ds=\underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}$
+\end{enumerate}
+
+
+%\makeemptybox{\fill}
+\addpoints
+
+\newpage
+
+\question[15] Let $\ve{F}=-2y\ve{i}+2x\ve{j}+(xy+z^2)\ve{k}$ and $S$  the hemisphere $x^2+y^2+z^2=4$, $z\ge 0$. Evaluate $\iint_S\nabla\times \ve{F}\cdot\ve{n}\,d\sigma$.\vskip8in
+
+
+\hskip3in $\iint_S\nabla\times \ve{F}\cdot\ve{n}\,d\sigma=\underline{\phantom{aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa}}$
+
+%\makeemptybox{\fill}
+\addpoints
+
+\end{questions}
+
+\end{document} 
